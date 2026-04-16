@@ -33,10 +33,9 @@ public class BusquedaStepDefinitions {
         );
     }
 
-    @Then("the user should see the message {string}")
+    @Then("the user should see the search message {string}")
     public void verifyNoResultsMessage(String expectedMessage) {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(BusquedaPage.MSJ_SIN_RESULTADOS).hasTextContent(expectedMessage)
         );
-    }
 }

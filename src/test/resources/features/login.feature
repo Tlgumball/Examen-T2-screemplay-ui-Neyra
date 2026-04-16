@@ -2,7 +2,7 @@ Feature: User Login
 
   Scenario: Successful login with valid credentials
     Given the user navigates to the login page
-    When the user enters email "202122378prueba2@cibertec.pe" and password "Test@12345"
+    When the user enters email "202122378prueba1@cibertec.pe" and password "Test@12345"
     And clicks on the login button
     Then the user should see the name "Estefano" in the page header
 
@@ -10,4 +10,4 @@ Feature: User Login
     Given the user navigates to the login page
     When the user enters email "2022101234@cibertec.pe" and password"wrongpass"
     And clicks on the login button
-    Then the user should see the message "Warning: No match for E-Mail Address and/or Password."
+    Then the user should see the login message "Warning: No match for E-Mail Address and/or Password."

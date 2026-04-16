@@ -43,7 +43,7 @@ public class LoginStepDefinitions {
         );
     }
 
-    @Then("the user should see the message {string}")
+    @Then("the user should see the login message {string}")
     public void verifyErrorMessage(String expectedMessage) {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(LoginPage.MSJ_ERROR).hasTextContent(expectedMessage)
