@@ -38,4 +38,4 @@ public class BusquedaStepDefinitions {
         theActorInTheSpotlight().attemptsTo(
                 Ensure.that(BusquedaPage.MSJ_SIN_RESULTADOS).hasTextContent(expectedMessage)
         );
-}
+}}

@@ -2,7 +2,7 @@ Feature: User Login
 
   Scenario: Successful login with valid credentials
     Given the user navigates to the login page
-    When the user enters email "202122378prueba1@cibertec.pe" and password "Test@12345"
+    When the user enters email "202122378prueba11@cibertec.pe" and password "Test@12345"
     And clicks on the login button
     Then the user should see the name "Estefano" in the page header
 
